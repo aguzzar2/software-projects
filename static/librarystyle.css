@@ -1,0 +1,240 @@
+
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 30px;
+    border: 20px solid #E6F4E6;
+    background-color: #87B6E9;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 700px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.button__space{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.large__button{
+    font-size: 30px;
+    padding: 20px 20px;
+    width: 300px;
+    height: 80px;
+    margin: 0 5px;
+    border-radius: 25px;
+    border-color:aliceblue;
+    color: #8EBB8E;
+    background-color: azure;
+    font-weight: bold;
+}
+
+.med-button__space{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.med__button{
+    font-size: 20px;
+    padding: 20px 20px;
+    width: 200px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 25px;
+    border-color:aliceblue;
+    color: #8EBB8E;
+    background-color: azure;
+    font-weight: bold;
+}
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    font-size: 25px;
+    background: green;
+    padding-bottom: 20px;
+    height: 150px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links, .logo, .material-icons {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.toggle-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+/* For large screen more than 600 */
+
+@media screen and (min-width:600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        height: 150px;
+        align-items: center;
+    }
+    .toggle-nav {
+        display: none;
+
+    }
+}
+.text__box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deck__inputs {
+    row-gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  
+ 
+  .deck__label {
+    display: block;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.25rem;
+  }
+  .deck_input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 6px;
+    border: 2px solid var(--text-color);
+    background-color: hsla(244, 16%, 92%, 0.6);
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    transition: border 0.4s;
+    box-sizing: border-box;
+    width: 300px;
+  }
+  .deck_input::placeholder {
+    color: var(--text-color);
+    opacity: 0.5; 
+  }
+  .deck_input:focus, .deck_input:valid {
+    border: 2px solid var(--first-color);
+  }
+  .deck_box {
+    position: relative;
+  }
+  .deck_box .deck_input {
+    padding-right: 36px;
+  }
+  .nav-links, .logo, .material-icons {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+/*^^^ Consider Changing this */
+
+
+.navbar {
+    font-size: 25px;
+    background: green;
+    padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links, .logo, .material-icons {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.toggle-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+/* For large screen more than 600 */
+
+@media screen and (min-width:600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        height: 150px;
+        align-items: center;
+    }
+    .toggle-nav {
+        display: none;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+    }
+    .main-nav>li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 20px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+}

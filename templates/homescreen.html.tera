@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/homestyle.css">
+    <title>English to Jap Notes</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+    </nav>
+
+    <!-- <h1>Learning a New Language, eh?</h1> -->
+    <div class="container">
+        <form id="library-form" method="post" action="/library">
+            <div class="button__space">
+                <button class="large__button" type="submit">Library</button>
+            </div>
+        </form>
+
+        <form id="create-deck-form" method="post" action="/create-deck">
+            <div class="button__space">
+                <button class="large__button" type="submit">Create Deck</button>
+            </div>
+        </form>
+
+        <form id="sign-out-form" method="post" action="/sign-out">
+            <div class="button__space">
+                <button class="large__button" type="submit">Sign Out</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

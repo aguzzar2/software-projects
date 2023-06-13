@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/practicestyle.css">
+    <title>English to Jap Notes</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <form id="library-form" method="post" action="/library">
+            <div class="button__space">
+                <button class="large__button" type="submit">Library</button>
+            </div>
+        </form>
+
+        <form id="create-deck-form" method="post" action="/create-deck">
+            <div class="button__space">
+                <button class="large__button" type="submit">Create Deck</button>
+            </div>
+        </form>
+
+        <form id="sign-out-form" method="post" action="/sign-out">
+            <div class="button__space">
+                <button class="large__button" type="submit">Sign Out</button>
+            </div>
+        </form>
+    </nav>
+
+    <!-- <h1>Learning a New Language, eh?</h1> -->
+
+
+    <div class="container">
+        <form id="practice-notes-form" method="post" action="/check-answer" accept-charset="UTF-8">
+            <div class="translate__inputs">
+                <h3>{{englishWord}}</h3>
+                <div class="text__box">
+                    <label for="" class="translate__label">Japanese</label>
+                    <div class="login__box">
+                        <input type="text" name="answer" placeholder="日本穂" required class="translate__input">
+                    </div>
+                </div>
+                <input type="hidden" name="table" value="{{table}}">
+                <input type="hidden" name="english_word" value="{{ englishWord }}">
+                <div class="button__space">
+                    <button class="med__button" type="submit">Check</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

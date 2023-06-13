@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/deckstyle.css">
+    <title>English to Jap Notes</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <form id="library-form" method="post" action="/library">
+            <div class="button__space">
+                <button class="large__button" type="submit">Library</button>
+            </div>
+        </form>
+
+        <form id="create-deck-form" method="post" action="/create-deck">
+            <div class="button__space">
+                <button class="large__button" type="submit">Create Deck</button>
+            </div>
+        </form>
+
+        <form id="sign-out-form" method="post" action="/sign-out">
+            <div class="button__space">
+                <button class="large__button" type="submit">Sign Out</button>
+            </div>
+        </form>
+    </nav>
+    <!-- <h1>Learning a New Language, eh?</h1> -->
+    
+    <div class="container">
+        <form id="create-deck" method="post">
+            <div class="deck__inputs">
+                <div class = "text__box">
+                    <label for="" class="deck__label">Name of Deck</label>
+                    <div class="deck__box">
+                        <input type="deckname" name="deckname" placeholder="Name of Deck" required class="deck_input">
+                    </div>
+                </div>
+                <button class ="large__button" type="button" onclick="add_to_dict()">Add</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function add_to_dict() {
+            var form = document.getElementById("create-deck");
+            form.action = "/newdeck";
+            form.submit();
+        }
+
+    </script>
+    
+
+</body>
+</html>
