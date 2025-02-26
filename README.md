@@ -38,7 +38,7 @@ A web-based flashcard application designed to help users learn Japanese, featuri
 
 2. **Installation**
    ```bash
-   git clone [IntelliBrain](https://github.com/aguzzar2/software-projects.git)
+   git clone https://github.com/aguzzar2/software-projects.git
    cd software-projects
    cargo build
    ```
