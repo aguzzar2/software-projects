@@ -38,14 +38,14 @@ A web-based flashcard application designed to help users learn Japanese, featuri
 
 2. **Installation**
    ```bash
-   git clone [repository-url]
-   cd [project-directory]
+   git clone [IntelliBrain](https://github.com/aguzzar2/software-projects.git)
+   cd software-projects
    cargo build
    ```
 
 3. **Running the Application**
    ```bash
-   cargo run
+   cargo run --bin home
    ```
    The application will be available at `http://localhost:8000`
 
